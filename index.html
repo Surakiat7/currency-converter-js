@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 400px; margin: auto; padding: 20px; }
+    h1 { text-align: center; }
+    select, input, button {
+      width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box;
+    }
+    .result { margin-top: 20px; text-align: center; font-weight: bold; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1>Currency Converter</h1>
+
+  <label>จำนวนเงิน</label>
+  <input type="number" id="amount" placeholder="เช่น 100" />
+
+  <label>จากสกุลเงิน</label>
+  <select id="fromCurrency"></select>
+
+  <label>เป็นสกุลเงิน</label>
+  <select id="toCurrency"></select>
+
+  <button onclick="convertCurrency()">แปลงสกุลเงิน</button>
+
+  <div class="result" id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
